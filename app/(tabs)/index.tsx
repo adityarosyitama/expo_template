@@ -1,15 +1,23 @@
 import { StyleSheet } from 'react-native';
-
 import EditScreenInfo from '../../components/EditScreenInfo';
 import { Text, View } from '../../components/Themed';
+import { BackgroundTop } from '../../components/utility_ar/components/background/background';
+import { H2 } from '../../components/utility_ar/components/text/styleText';
+import { Logout } from '../../components/utility_ar/components/screen/(login)/login';
 
-export default function TabOneScreen() {
+const index = () => {
+  return (<TabOneScreen/>)
+}
+export default index
+
+export function TabOneScreen() {
   return (
-    <View style={styles.container}>
-      <Text style={styles.title}>Tab One</Text>
-      <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
-      <EditScreenInfo path="app/(tabs)/index.tsx" />
-    </View>
+    <BackgroundTop>
+        <H2>Tab One</H2>
+        <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
+        <EditScreenInfo path="app/(tabs)/index.tsx" />
+        <Logout/>
+    </BackgroundTop>
   );
 }
 
