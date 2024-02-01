@@ -16,7 +16,7 @@ export function TabOneScreen() {
         <H2>Tab One</H2>
         <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
         <EditScreenInfo path="app/(tabs)/index.tsx" />
-        <Logout/>
+        <Logout screen={'logout'}/>
     </BackgroundTop>
   );
 }

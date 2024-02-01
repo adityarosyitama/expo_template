@@ -11,7 +11,6 @@ export function SplashGet() {
   const fetchData = async () => {
     try {
       const Login = await AsyncGet('Login');
-      console.log('login',Login);
       if (Login === 'login tersimpan') {
         router.push('(tabs)')
       } else {

@@ -17,8 +17,7 @@ function TabBarIcon(props: {
 
 export default function TabLayout() {
   const colorScheme = useColorScheme();
-  console.log(`dev return=>`, DeviceReturn({ data: true, only: 'web' }), 'web', DevicePermission('android'), Platform.OS)
-  return (
+   return (
     <>
     {!DevicePermission('web')?
       <Tabs
