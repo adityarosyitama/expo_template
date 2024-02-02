@@ -1,7 +1,6 @@
-import { StyleSheet } from 'react-native'
+import { StyleSheet, Text } from 'react-native'
 import { heightCal } from '../../utils/screenSize/Screensize'
-import { Text } from '../../../Themed'
-import  { colorTheme, textColor } from '../colors/styleColors'
+import  { colorTheme } from '../colors/styleColors'
 
 export const styleText = StyleSheet.create({
     h1: {
@@ -40,7 +39,6 @@ export const H2 = ({ children,  style }) => {
     return (
         <Text style={{
             fontSize: heightCal(20),
-            margin: heightCal(5),
             fontWeight: 'bold', 
             color: colorTheme().text,
             ...style
@@ -53,7 +51,6 @@ export const H3 = ({ children, style }) => {
     return (
         <Text style={{
             fontSize: heightCal(15),
-            margin: heightCal(5),
             fontWeight: 'bold', 
             color: colorTheme().text,
             ...style
@@ -66,7 +63,6 @@ export const P = ({ children, style }) => {
     return (
         <Text style={{
             fontSize: heightCal(12),
-            margin: heightCal(5),
             color: colorTheme().text,
             ...style
         }}>

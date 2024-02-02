@@ -57,6 +57,6 @@ export const Logout = ({ screen, setRefresh, refresh }) => {
         }
     }
     return (
-        <ButtonH3 onPress={handleDelete} />
+        <ButtonH3 onPress={handleDelete} >Logout</ButtonH3>
     );
 }

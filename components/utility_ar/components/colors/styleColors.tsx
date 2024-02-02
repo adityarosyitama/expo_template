@@ -1,7 +1,17 @@
 import { useGlobalSearchParams } from "expo-router";
 
-const tintColorLight = { tx: 'rgba(0,255,0,1)', bg: 'rgba(255,255,255,1)',block:'rgba(255,255,0,1)',icon:'rgba(0,0,150,1)' };
-const tintColorDark = { tx: '#fff', bg: 'rgba(0,0,0,1)',block:'rgba(255,0,255,1)' ,icon:'rgba(0,0,255,1)'  };
+const tintColorLight = {
+  tx: '#f96d6d', 
+  bg: '#8fb1e9', 
+  block: '#a9d7f6', 
+  icon: '#b84d69'
+};
+const tintColorDark = {
+  tx: '#639cd9', 
+  bg: '#1D2E41', 
+  block: '#342056', 
+  icon: '#9ea0e2',
+};
 
 export const stylesColors = {
   light: {

@@ -12,17 +12,15 @@ function getScreenDimensions() {
 // Cara menggunakannya:
 export const { widthScreen, heightScreen } = getScreenDimensions();
 
-export const widthCal=(i)=>{
-  const res = widthScreen*i/widthDefault
-  // const _res = deviceCek==='web'? null:res
+export const widthCal = (i) => {
+  const res = widthScreen * i / widthDefault
   return res
 }
-export const heightCal=(i)=>{
-  const res = heightScreen*i/heightDefault
-  const _res = Device()==='web'? widthCal(i)*0.7:res
+export const heightCal = (i) => {
+  const res = heightScreen * i / heightDefault
+  const _res = Device() === 'web' ? widthCal(i) * 0.7 : res
   return _res
 }
 
-// Ukuran Basic FIGMA
 const heightDefault = 812
 const widthDefault = 375
